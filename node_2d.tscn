@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://efg6utncvp83"]
+
+[ext_resource type="Texture2D" uid="uid://dfcujk0fgo5hu" path="res://Sprites/student.png" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://c1fg780x2lhvp" path="res://Dark_red_ crystal1.png" id="2_0e48y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wf45b"]
+size = Vector2(264.68872, 482.00827)
+
+[node name="Node2D" type="Node2D" unique_id=1083459814]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2000152853]
+position = Vector2(-211, -79)
+rotation = -0.006624175
+scale = Vector2(0.5773044, 0.5934702)
+texture = ExtResource("1_wtcfe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=830410765]
+position = Vector2(1.7321701, 10.952535)
+scale = Vector2(1.033991, 0.98231983)
+shape = SubResource("RectangleShape2D_wf45b")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=428854045]
+
+[node name="DarkRedCrystal1" type="Sprite2D" parent="." unique_id=1028881320]
+position = Vector2(119, 8.5)
+scale = Vector2(2.875, 1.796875)
+texture = ExtResource("2_0e48y")
