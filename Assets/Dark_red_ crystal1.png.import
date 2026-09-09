@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfcujk0fgo5hu"
-path="res://.godot/imported/student.png-ba431d6522aa2b14ab06509ddd9b16cc.ctex"
+uid="uid://c1fg780x2lhvp"
+path="res://.godot/imported/Dark_red_ crystal1.png-9942353ed7db45a0ec95b084885da03e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/student.png"
-dest_files=["res://.godot/imported/student.png-ba431d6522aa2b14ab06509ddd9b16cc.ctex"]
+source_file="res://Assets/Dark_red_ crystal1.png"
+dest_files=["res://.godot/imported/Dark_red_ crystal1.png-9942353ed7db45a0ec95b084885da03e.ctex"]
 
 [params]
 

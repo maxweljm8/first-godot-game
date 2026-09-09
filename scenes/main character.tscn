@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ce6ml0yxgtxwe"]
+
+[ext_resource type="Texture2D" uid="uid://cmw7gr6rnkfld" path="res://Assets/leonardo.png" id="1_ciabg"]
+[ext_resource type="Script" uid="uid://1wc4nn1xpcou" path="res://scenes/player_movement.gd" id="2_pmove"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wf45b"]
+size = Vector2(128, 128)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=375571403]
+script = ExtResource("2_pmove")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=592136476]
+texture_filter = 1
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_ciabg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1083346483]
+shape = SubResource("RectangleShape2D_wf45b")

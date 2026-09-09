@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://cb1wkrvhqn6d"]
+
+[ext_resource type="Texture2D" uid="uid://c80bw78x3oo40" path="res://Assets/BGT3ik.png" id="1_k0ot2"]
+[ext_resource type="PackedScene" uid="uid://ce6ml0yxgtxwe" path="res://scenes/main character.tscn" id="2_ijdfw"]
+[ext_resource type="Texture2D" uid="uid://c1fg780x2lhvp" path="res://Assets/Dark_red_ crystal1.png" id="3_jb6a7"]
+[ext_resource type="Script" uid="uid://ii7uf76pxva0" path="res://scenes/game_manager.gd" id="4_gmgr"]
+
+[node name="Node2D" type="Node2D" unique_id=1083459814]
+script = ExtResource("4_gmgr")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1868208294]
+position = Vector2(576, 324)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_k0ot2")
+
+[node name="CharacterBody2D" parent="." unique_id=375571403 instance=ExtResource("2_ijdfw")]
+position = Vector2(120, 500)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=183417933]
+position = Vector2(1020, 500)
+scale = Vector2(2.2, 2.2)
+texture = ExtResource("3_jb6a7")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=123896149]
+
+[node name="StartButton" type="Button" parent="UI" unique_id=831183099]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -80.0
+offset_top = -25.0
+offset_right = 80.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "Start"
+
+[node name="ReachedLabel" type="Label" parent="UI" unique_id=1762400926]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -80.0
+offset_top = -25.0
+offset_right = 80.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "Reached"
+horizontal_alignment = 1
+vertical_alignment = 1
